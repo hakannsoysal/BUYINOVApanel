@@ -1,6 +1,6 @@
 <?php
 /*
-www.celalyurtcu.com
+Berfin Yalınız-Hakan Soysal
 */
 ?>
 

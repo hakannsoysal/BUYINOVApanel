@@ -11,20 +11,30 @@ header("Location:giris.php");
 <head>
     <meta charset="UTF-8">
     <title>Üye Listesi</title>
-    <!-- BOOTSTRAP 4.3.1 FRAMEWORK PROJEMİZE DAHİL EDİYORUZ -->
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <!-- BOOTSTRAP 4.3.1 FRAMEWORK PROJEMİZE DAHİL EDİYORUZ -->
-</head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+</head>
 <body>
-<div class="container">
+<div class="topnav">
+<ul>
+  <a class="active" href="index.php">Hakkımızda</a>
+  <a href="duyuru.html">Duyurular</a>
+  <a href="İletisim.php">İletişim</a>
+  <a href="giris.php">Giriş Yap</a>
+  <a href="kayit_ol.php">Kaydol</a>
+ <a href="depoekle.php">Depo</a>
+  <a href="takim.html">Takımımız</a>
+</ul>
+</div>
+<div class="form-control>
     <div class="row">
         <div class="col">
-            <h4 class="mt-5">Üye Listesi - <a href="index.php?sayfa=cikis-yap"><b>ÇIKIŞ YAP</b></a></h4>
+            <h3 class="mt-5"><b>Üye Listesi</b></h3>
             <table class="table">
                 <thead class="thead-light">
-                <tr>
+              
+                <tr >
                     <th scope="col">ID</th>
                     <th scope="col"> Kullanıcı Adı</th>
                     <th scope="col">Şifre</th>
@@ -44,14 +54,16 @@ header("Location:giris.php");
                         <td><?php echo $uye->uye_sifre;?></td>
                         <td><?php echo $uye->uye_eposta;?></td>
                         <td>
-                            <a href="uye_duzenle.php?id=<?php echo $uye->uye_id;?>">[ Düzenle ]</a>
-                            <a href="uye_sil.php?id=<?php echo $uye->uye_id;?>">[ Sil ]</a>
+                            <a href="uye_duzenle.php?id=<?php echo $uye->uye_id;?>"><button2 >[ Düzenle ]</button2></a>
+                            <a href="uye_sil.php?id=<?php echo $uye->uye_id;?>"><button3>[ Sil ]</button3</a>
                         </td>
                     </tr>
                 <?php } ?>
                 </tbody>
             </table>
             <a href="uye_ekle.php" class="btn btn-primary">Yeni Üye Ekle</a>
+            <a  class="btn btn-danger" href="index.php?sayfa=cikis-yap"><b>ÇIKIŞ YAP</b></a>
+           
         </div>
     </div>
 </div>

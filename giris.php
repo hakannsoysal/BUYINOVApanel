@@ -2,7 +2,7 @@
 // UYE GIRISI YAPILMAMISSA GIRIS SAYFASINA YONLENDIR
 include "baglanti.php";
 if ($_SESSION["login"]) {
-    header("Location:index.php");
+  
 }
 ?>
 <!doctype html>
@@ -13,10 +13,21 @@ if ($_SESSION["login"]) {
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Üye Girişi</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+<div class="topnav">
+<ul>
+<a class="active" href="index.php">Hakkımızda</a>
+  <a href="index.php">Duyurular</a>
+  <a href="İletisim.php">İletişim</a>
+  <a href="giris.php">Giriş Yap</a>
+  <a href="kayit_ol.php">Kaydol</a>
+ <a href="depoekle.php">Depo</a>
+  <a href="takim.html">Takımımız</a>
+</ul>
+</div>
 <div class="container">
     <div class="col">
         <?php
@@ -80,3 +91,4 @@ if ($_SESSION["login"]) {
 
 </body>
 </html>
+

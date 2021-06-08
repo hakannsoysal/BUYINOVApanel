@@ -11,17 +11,26 @@ header("Location:giris.php");
 <head>
     <meta charset="UTF-8">
     <title>Yeni Üye Ekle</title>
-    <!-- BOOTSTRAP 4.3.1 FRAMEWORK PROJEMİZE DAHİL EDİYORUZ -->
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <!-- BOOTSTRAP 4.3.1 FRAMEWORK PROJEMİZE DAHİL EDİYORUZ -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
 <body>
+<div class="topnav">
+<ul>
+  <a class="active" href="index.php">Hakkımızda</a>
+  <a href="duyuru.html">Duyurular</a>
+  <a href="İletisim.php">İletişim</a>
+  <a href="giris.php">Giriş Yap</a>
+  <a href="kayit_ol.php">Kaydol</a>
+ <a href="depoekle.php">Depo</a>
+  <a href="takim.html">Takımımız</a>
+</ul>
+</div>
 <div class="container">
     <div class="row">
         <div class="col">
-            <h4 class="mt-5">Yeni Üye Ekle - <a href="index.php?sayfa=cikis-yap"><b>ÇIKIŞ YAP</b></a></h4>
+            <h4 class="mt-8">Yeni Üye Ekle</h4>
             <?php
 if (isset($_POST["uye_kadi"])) {
   include "baglanti.php";
@@ -84,6 +93,7 @@ if (isset($_POST["uye_kadi"])) {
 
                 <button type="submit" class="btn btn-primary">Yeni Üye Ekle</button>
                 <a href="uye_listesi.php" class="btn btn-primary">Üye Listesi</a>
+                <a  class="btn btn-danger" href="index.php?sayfa=cikis-yap"><b>ÇIKIŞ YAP</b></a>
             </form>
         </div>
     </div>

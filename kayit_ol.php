@@ -1,20 +1,27 @@
 <?php
 include "baglanti.php";
 ?>
-
-
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <title>Üye Kayıt</title>
-    <!-- BOOTSTRAP 4.3.1 FRAMEWORK PROJEMİZE DAHİL EDİYORUZ -->
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <!-- BOOTSTRAP 4.3.1 FRAMEWORK PROJEMİZE DAHİL EDİYORUZ -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
 <body>
+<div class="topnav">
+<ul>
+<a class="active" href="index.php">Hakkımızda</a>
+  <a href="index.php">Duyurular</a>
+  <a href="İletisim.php">İletişim</a>
+  <a href="giris.php">Giriş Yap</a>
+  <a href="kayit_ol.php">Kaydol</a>
+ <a href="depoekle.php">Depo</a>
+  <a href="takim.html">Takımımız</a>
+</ul>
+</div>
 <div class="container">
     <div class="row">
         <div class="col">
@@ -92,3 +99,10 @@ if (isset($_POST["uye_kadi"])) {
 </div>
 </body>
 </html>
+
+   
+
+
+
+
+    
