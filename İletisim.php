@@ -11,9 +11,9 @@
 <body>
   <div class="topnav">
     <ul>
-    <a class="active" href="index.php">Hakkımızda</a>
-      <a href="duyuru.html">Duyurular</a>
-      <a href="İletisim.php">İletişim</a>
+    <a  href="index.php">Anasayfa</a>
+      <a href="index.php">Duyurular</a>
+      <a class="active" href="İletisim.php">İletişim</a>
       <a href="giris.php">Giriş Yap</a>
       <a href="kayit_ol.php">Kaydol</a>
      <a href="depoekle.php">Depo</a>
@@ -23,25 +23,25 @@
     <div class="container" >
     <form action="İletisim.php" method="post">
       
-          <label for="fname">First Name</label>
-          <input class="form-control type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="ad">Ad</label>
+          <input class="form-control type="text" id="ad" name="ad" placeholder="Adınız">
       
-          <label for="lname">Last Name</label>
-          <input class="form-control type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="soyad">Soyad</label>
+          <input class="form-control type="text" id="soyad" name="soyad" placeholder="Soyadınız">
       
-          <label  for="country">Country</label>
-          <select class="form-control id="country" name="country">
-            <option value="turkey">Türkiye</option>
-            <option value="canada">Kanada</option>
-            <option value="australia">Avustralya</option>
-            <option value="canada">İsveç</option>
-            <option value="usa">ABD</option>
+          <label  for="ulke">Ülke</label>
+          <select class="form-control id="country" name="ulke">
+            <option value="turkiye">Türkiye</option>
+            <option value="kanada">Kanada</option>
+            <option value="avustralya">Avustralya</option>
+            <option value="isvec">İsveç</option>
+            <option value="abd">ABD</option>
           </select>
       
-          <label for="subject">Subject</label>
-          <textarea class="form-control id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          <label for="konu">Konu</label>
+          <textarea class="form-control id="konu" name="subject" placeholder="Bir şeyler yazın.." style="height:200px"></textarea>
       
-          <input class="btn btn-primary" type="submit" value="Submit">
+          <input class="btn btn-primary" type="gonder" value="Gönder">
           <?php
 if($_POST)
 {

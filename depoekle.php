@@ -1,12 +1,13 @@
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="bootstrap.min.css">
 <div class="topnav">
 <ul>
-<a class="active" href="index.php">Hakkımızda</a>
+<a  href="index.php">Anasayfa</a>
   <a href="index.php">Duyurular</a>
   <a href="İletisim.php">İletişim</a>
   <a href="giris.php">Giriş Yap</a>
   <a href="kayit_ol.php">Kaydol</a>
- <a href="depoekle.php">Depo</a>
+ <a class="active" href="depoekle.php">Depo</a>
   <a href="takim.html">Takımımız</a>
 </ul>
 </div>
@@ -74,7 +75,7 @@ include("baglanti.php");
 		
 		
 		<div class="dosya"> 
-		<h2>Dosya yukle..</h2>
+		<h2>Dosyalarınızı depolayın..</h2>
 		<form action="" method="post" enctype="multipart/form-data"> 
 		<input type="file" name="dosya" />
 		<button type="submit">yukle</button>
@@ -96,8 +97,8 @@ include("baglanti.php");
 				   <img src="<?php echo $m["dosya_ad"];?>" width="400" height="200" alt="" /> <br />
 				   <span>resim turu : <?php echo $m["dosya_turu"];?> </span> <br />
 				   <span>resim size : <?php echo $m["dosya_size"];?> kb </span> <br /> 
-				   <a href="?do=sil&id=<?php echo $m["dosya_id"];?>">sil</a> &nbsp; 
-				   <a href="?do=duzenle&id=<?php echo $m["dosya_id"];?>">duzenle</a>  
+				   <a href="?do=sil&id=<?php echo $m["dosya_id"];?>">Sil</a> &nbsp; 
+				   <a href="?do=duzenle&id=<?php echo $m["dosya_id"];?>">Düzenle</a>  
 						 
 				   </div>
 				   <?

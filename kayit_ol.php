@@ -13,11 +13,11 @@ include "baglanti.php";
 <body>
 <div class="topnav">
 <ul>
-<a class="active" href="index.php">Hakkımızda</a>
+<a  href="index.php">Anasayfa</a>
   <a href="index.php">Duyurular</a>
   <a href="İletisim.php">İletişim</a>
   <a href="giris.php">Giriş Yap</a>
-  <a href="kayit_ol.php">Kaydol</a>
+  <a class="active" href="kayit_ol.php">Kaydol</a>
  <a href="depoekle.php">Depo</a>
   <a href="takim.html">Takımımız</a>
 </ul>
