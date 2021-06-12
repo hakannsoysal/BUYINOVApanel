@@ -11,14 +11,13 @@ header("Location:giris.php");
 <head>
     <meta charset="UTF-8">
     <title>Üye Sil</title>
-    <!-- BOOTSTRAP 4.3.1 FRAMEWORK PROJEMİZE DAHİL EDİYORUZ -->
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <!-- BOOTSTRAP 4.3.1 FRAMEWORK PROJEMİZE DAHİL EDİYORUZ -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
 </head>
 
 <body>
-<div class="container">
+    
+<div class="container" id=uye_sil>
     <div class="row">
         <div class="col">
             <h4 class="mt-5">Üye Sil</h4>
@@ -53,5 +52,6 @@ header("Location:giris.php");
         </div>
     </div>
 </div>
+
 </body>
 </html>

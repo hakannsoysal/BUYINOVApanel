@@ -1,11 +1,8 @@
+
 <?php
 /*
-www.celalyurtcu.com
+Berfin Yalınız-Hakan Soysal
 */
-?>
-
-<?php
-
 session_destroy();
 header("Refresh:1; url=giris.php");
 ?>

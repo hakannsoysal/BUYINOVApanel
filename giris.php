@@ -2,7 +2,7 @@
 // UYE GIRISI YAPILMAMISSA GIRIS SAYFASINA YONLENDIR
 include "baglanti.php";
 if ($_SESSION["login"]) {
-    header("Location:index.php");
+
 }
 ?>
 <!doctype html>
@@ -13,10 +13,21 @@ if ($_SESSION["login"]) {
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Üye Girişi</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+<div class="topnav">
+<ul>
+<a  href="index.php">Anasayfa</a>
+  <a href="index.php">Duyurular</a>
+  <a href="İletisim.php">İletişim</a>
+  <a class="active" href="giris.php">Giriş Yap</a>
+  <a href="kayit_ol.php">Kaydol</a>
+ <a href="depoekle.php">Depo</a>
+  <a href="takim.html">Takımımız</a>
+</ul>
+</div>
 <div class="container">
     <div class="col">
         <?php
@@ -40,7 +51,7 @@ if ($_SESSION["login"]) {
                     $_SESSION["uye"] = $uye->uye_kadi;
                     $_SESSION["id"] = $uye->uye_id;
 
-                    header("Refresh: 1; url=uye_listesi.php");
+                    header("Refresh: 1; url=social_media_page.php");
                     echo '
                     <div class="alert alert-success alert-dismissible fade show" role="alert">
                       <strong>Giriş Başarılı.</strong> Üye yönetim sayfasına yönlendiriliyorsunuz...

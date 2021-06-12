@@ -20,16 +20,25 @@ if ($uye_getir) {
 <head>
     <meta charset="UTF-8">
     <title>Üye Düzenle</title>
-    <!-- BOOTSTRAP 4.3.1 FRAMEWORK PROJEMİZE DAHİL EDİYORUZ -->
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <!-- BOOTSTRAP 4.3.1 FRAMEWORK PROJEMİZE DAHİL EDİYORUZ -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
+<div class="topnav">
+<ul>
+  <a class="active" href="index.php">Hakkımızda</a>
+  <a href="duyuru.html">Duyurular</a>
+  <a href="İletisim.php">İletişim</a>
+  <a href="giris.php">Giriş Yap</a>
+  <a href="kayit_ol.php">Kaydol</a>
+ <a href="depoekle.php">Depo</a>
+  <a href="takim.html">Takımımız</a>
+</ul>
+</div>
 <div class="container">
     <div class="row">
         <div class="col">
-            <h4 class="mt-5">Üye Düzenle - <a href="index.php?sayfa=cikis-yap"><b>ÇIKIŞ YAP</b></a></h4>
+            <h3 class="mt-5">Üye Düzenle</h3>
             <?php
             if (isset($_POST["uye_kadi"])) {
                 $uye_kadi = trim($_POST["uye_kadi"]);
@@ -86,6 +95,7 @@ if ($uye_getir) {
 
                 <button type="submit" class="btn btn-primary">Düzenlemeyi Kaydet</button>
                 <a href="uye_listesi.php" class="btn btn-primary">Üye Listesi</a>
+                <a href="index.php?sayfa=cikis-yap" class="btn btn-danger ">ÇIKIŞ YAP </a>
             </form>
         </div>
     </div>
