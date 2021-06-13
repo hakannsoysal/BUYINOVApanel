@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en-US">
+<html lang="tr">
 <head>
 	<meta charset="UTF-8">
 	<title></title>
@@ -29,14 +29,10 @@
 	
 	    switch ($do) {
 			
-			case "deposil":
-			include("sil.php");
+			case "sil":
+			include("deposil.php");
 			break;
-			
-			case "duzenle":
-			include("depoduzenle.php");
-			break;
-			
+		
 			default:
 			include("depoekle.php");
 			break;

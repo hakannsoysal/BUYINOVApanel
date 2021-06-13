@@ -4,22 +4,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
     <script type="text/javascript" src="sweetalert2.all.min.js"></script>
     <title>İletişim</title>
 </head>
 <body>
-  <div class="topnav">
-    <ul>
-    <a  href="index.php">Anasayfa</a>
-      <a href="index.php">Duyurular</a>
-      <a class="active" href="İletisim.php">İletişim</a>
-      <a href="giris.php">Giriş Yap</a>
-      <a href="kayit_ol.php">Kaydol</a>
-     <a href="depoekle.php">Depo</a>
-      <a href="takim.html">Takımımız</a>
-    </ul>
-    </div>
+<div class="topnav">
+<ul>
+<a  href="index.php">Anasayfa</a>
+  <a href="index.php">Duyurular</a>
+<a class="active" href="İletisim.php">İletişim</a>
+  <a style="  float: right;" href="giris.php">Giriş Yap</a>
+  <a style="  float: right;" href="kayit_ol.php">Kaydol</a>
+  <a href="takim.html">Takımımız</a>
+  
+</ul>
+</div>
     <div class="container" >
     <form action="İletisim.php" method="post">
       

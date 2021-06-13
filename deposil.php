@@ -1,18 +1,6 @@
-<link rel="stylesheet" href="style.css">
-<div class="topnav">
-<ul>
-<a href="index.php">Anasayfa</a>
-  <a href="index.php">Duyurular</a>
-  <a href="İletisim.php">İletişim</a>
-  <a href="giris.php">Giriş Yap</a>
-  <a href="kayit_ol.php">Kaydol</a>
- <a  class="active" href="depoekle.php">Depo</a>
-  <a href="takim.html">Takımımız</a>
-</ul>
-</div>
+
 <?php 
-
-
+include'baglanti.php';
   $id = $_GET["id"];
 
   $select = $db->prepare("select * from depo where dosya_id=?");
@@ -27,9 +15,9 @@
 	
 	if($ok){
 		
-		echo "<h2>Dosya basarıyla silindi</h2>";
+		echo "<h2>Dosya başarıyla silindi</h2>";
 		
-		header("refresh: 2; url=depoindex.php");
+		header("refresh: 0.5; url=depoekle.php");
 		
 	}else {
 		

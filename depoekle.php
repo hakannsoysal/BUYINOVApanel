@@ -3,12 +3,10 @@
 <div class="topnav">
 <ul>
 <a  href="index.php">Anasayfa</a>
-  <a href="index.php">Duyurular</a>
-  <a href="İletisim.php">İletişim</a>
-  <a href="giris.php">Giriş Yap</a>
-  <a href="kayit_ol.php">Kaydol</a>
+<a href="uye_listesi.php">Üye İşlemleri</a>
+  <a style="  float: right;" href="cikis.php">Çıkış</a>
+  <a href="social_media_page.php">Meydan</a>
  <a class="active" href="depoekle.php">Depo</a>
-  <a href="takim.html">Takımımız</a>
 </ul>
 </div>
 <?php  
@@ -16,22 +14,22 @@ include("baglanti.php");
    if($_FILES){
 	   
 	  
-       $maxBoyut       = 700000;
+       $maxBoyut       = 7000000;
 	   $dosyaUzantisi  = substr($_FILES["dosya"]["name"],-4,4);
 	   $dosyaAdi       = rand(1,99999).$dosyaUzantisi;
-	   $dosyaYolu      = "dosya/".$dosyaAdi;
+	   $dosyaYolu      = "dosya/".$dosya_ad;
 	   
 	   
 	     if($_FILES["dosya"]["size"]>$maxBoyut){
 			 
-			 echo "<h2>dosya boyutu 700kb'dan yuksek olamaz...</h2>";
+			 echo "<h2>Dosya boyutu 7000kb'dan yuksek olamaz...</h2>";
 			 
 		 }else {
 			 
 			 
 			 $dosya = $_FILES["dosya"]["type"];
 			 
-		 if($dosya == "image/jpeg" || $dosya == "image/png" || $dosya == "image/gif" || $dosya == "application/zip"){
+		 if($dosya == "image/jpeg" || $dosya == "image/png" || $dosya == "image/gif" || $dosya == "application/zip" || $dosya == "application/pdf" || $dosya == "application/docx"){
 			 
 			 
 			 if(is_uploaded_file($_FILES["dosya"]["tmp_name"])){
@@ -54,16 +52,16 @@ include("baglanti.php");
 				 
 				 if($tasi){
 					 
-					echo "<h2>dosya basarıyla yuklendi...</h2>";
+					echo "<h2>Dosya basarıyla yuklendi...</h2>";
                   
-                   header("refresh: 2; url=depoekle.php");				  
+                   header("refresh: 1; url=depoekle.php");				  
 					 
 				 }
 			 
 		 }else {
 			 
 			 
-			echo "<h2>dosya formati sadece jpg,png yada gif formatinda olmalıdır...</h2>"; 
+			echo "<h2>Dosya formatı desteklenmiyor.</h2>"; 
 			 
 			 
 		 }
@@ -73,15 +71,7 @@ include("baglanti.php");
 
 	    ?>  
 		
-		
-		<div class="dosya"> 
-		<h2>Dosyalarınızı depolayın..</h2>
-		<form action="" method="post" enctype="multipart/form-data"> 
-		<input type="file" name="dosya" />
-		<button type="submit">yukle</button>
-		
-		</form>
-		</div>
+	<h2>Dosyalarınızı depolayın..</h2>
 		<?php
 		
 		   
@@ -92,18 +82,17 @@ include("baglanti.php");
 		     foreach($d as $m){
              } 
 				   ?>
-				   <div class="liste"> 
-				   <h2>resim adi : <?php echo $m["dosya_ad"];?></h2>
+				 <div class="liste">
+				   <div class="dosya">
+					   <form action="" method="post" enctype="multipart/form-data">
 				   <img src="<?php echo $m["dosya_ad"];?>" width="400" height="200" alt="" /> <br />
-				   <span>resim turu : <?php echo $m["dosya_turu"];?> </span> <br />
-				   <span>resim size : <?php echo $m["dosya_size"];?> kb </span> <br /> 
-				   <a href="?do=sil&id=<?php echo $m["dosya_id"];?>">Sil</a> &nbsp; 
-				   <a href="?do=duzenle&id=<?php echo $m["dosya_id"];?>">Düzenle</a>  
-						 
-				   </div>
-				   <?
-				 
-			 }
-	   
-   }	   
-}
+				   <b>Dosya Adı: <?php echo $m["dosya_ad"];?></b> <br>
+				   <span> <b> Dosya Türü : <?php echo $m["dosya_turu"];?> </b></span> <br />
+				   <span><b> Dosya Boyutu : <?php echo $m["dosya_size"];?> kb <b></span> <br /> 
+					<input class="form-control"type="file" name="dosya" /><br>
+					    <button  class="btn btn-primary mb-2" type="submit">Yükle</button> 
+						 <a href="deposil.php?id=<?php echo $id; ?>" class="btn btn-danger">Sil</a><br>
+
+		  </div>	
+		</form>
+		</div>

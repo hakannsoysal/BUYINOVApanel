@@ -26,11 +26,9 @@ if ($uye_getir) {
 <body>
 <div class="topnav">
 <ul>
-  <a class="active" href="index.php">Hakkımızda</a>
   <a href="duyuru.html">Duyurular</a>
   <a href="İletisim.php">İletişim</a>
-  <a href="giris.php">Giriş Yap</a>
-  <a href="kayit_ol.php">Kaydol</a>
+  <a style="  float: right;" href="cikis.php">Çıkış Yap</a>
  <a href="depoekle.php">Depo</a>
   <a href="takim.html">Takımımız</a>
 </ul>
