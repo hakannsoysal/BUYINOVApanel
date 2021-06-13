@@ -3,10 +3,10 @@
 /*
 Berfin Yalınız-Hakan Soysal
 */
-session_destroy();
-header("Refresh:1; url=giris.php");
+
+header("Refresh:1; url=index.php");
 ?>
 
 <div class="alert alert-primary" role="alert">
-    Başarıyla çıkış yaptınız. Giriş sayfasına yönlendiriliyorsunuz...
+   <h3> Başarıyla çıkış yaptınız. Anasayfaya yönlendiriliyorsunuz...</h3>
 </div>

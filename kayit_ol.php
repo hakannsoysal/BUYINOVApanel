@@ -16,11 +16,10 @@ include "baglanti.php";
 <a  href="index.php">Anasayfa</a>
   <a href="index.php">Duyurular</a>
   <a href="İletisim.php">İletişim</a>
-  <a href="giris.php">Giriş Yap</a>
-  <a class="active" href="kayit_ol.php">Kaydol</a>
- <a href="depoekle.php">Depo</a>
+  <a style="  float: right;" href="giris.php">Giriş Yap</a>
+  <a style="  float: right;" href="admin.php">Admin</a>
   <a href="takim.html">Takımımız</a>
-</ul>
+</ul> class="active"
 </div>
 <div class="container">
     <div class="row">

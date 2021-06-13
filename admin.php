@@ -24,14 +24,13 @@ if ($_SESSION["login"]) {
   <a href="İletisim.php">İletişim</a>
   <a style="  float: right;" href="giris.php">Giriş Yap</a>
   <a style="  float: right;" href="kayit_ol.php">Kaydol</a>
-  <a style="  float: right;" href="admin.php">Admin</a>
   <a href="takim.html">Takımımız</a>
 </ul>
 </div>
 <div class="container">
     <div class="col">
         <?php
-
+        
         if ($_POST) {
             $kullanici_adi = trim($_POST["kullanici_adi"]);
             $sifre = trim($_POST["sifre"]);
@@ -52,18 +51,14 @@ if ($_SESSION["login"]) {
                     $_SESSION["uye"] = $uye->uye_kadi;
                     $_SESSION["id"] = $uye->uye_id;
 
-
-                      header("Refresh: 1; url=social_media_page.php");
-                      echo '
-                      <div class="alert alert-success alert-dismissible fade show" role="alert">
-                        <strong>Giriş Başarılı.</strong> Üye yönetim sayfasına yönlendiriliyorsunuz...
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>';
-
-
-
+                    header("Refresh: 1; url=uye_listesi.php");
+                    echo '
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                      <strong>Giriş Başarılı.</strong> Üye yönetim sayfasına yönlendiriliyorsunuz...
+                      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>';
                 } else {
                     echo '
                     <div class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -73,12 +68,11 @@ if ($_SESSION["login"]) {
                   </button>
                 </div>
                     ';
-
                 }
             }
         }
         ?>
-        <h4 class="mt-5">Üye Girişi</h4>
+        <h4 class="mt-5">Admin Girişi</h4>
         <form method="post" action="">
             <div class="form-group">
                 <label>Kullanıcı Adı: (*)</label>
@@ -94,7 +88,6 @@ if ($_SESSION["login"]) {
 
     </div>
 </div>
-
 
 </body>
 </html>

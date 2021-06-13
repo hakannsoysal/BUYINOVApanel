@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
@@ -6,158 +5,255 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js"></script>
+
+
+<!-- footer css
+<style>
+/*footer*/
+.col_white_amrc { color:#FFF;}
+footer { width:100%; background-color:#263238; min-height:100px; padding:10px 0px 25px 0px ;}
+.pt2 { padding-top:30px ; margin-bottom:20px ;}
+footer p { font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:8px;}
+
+.social_footer_ul { display:table; margin:15px auto 0 auto; list-style-type:none;  }
+.social_footer_ul li { padding-left:20px; padding-top:10px; float:left; }
+.social_footer_ul li a { color:#CCC; border:1px solid #CCC; padding:8px;border-radius:50%;}
+.social_footer_ul li i {  width:20px; height:20px; text-align:center;}
+
+</style>
+-->
+  <!-- slide show css  -->
+  <style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+
+
+<!-- duyuru css  -->
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+</style>
+
+
 </head>
 <body >
+
 <div class="topnav">
 <ul>
 <a class="active" href="#Anasayfa">Anasayfa</a>
   <a href="#Duyuru">Duyurular</a>
   <a href="İletisim.php">İletişim</a>
-  <a href="giris.php">Giriş Yap</a>
-  <a href="kayit_ol.php">Kaydol</a>
- <a href="depoekle.php">Depo</a>
+  <a style="  float: right;" href="admin.php">Admin</a>
+  <a style="  float: right;" href="giris.php">Giriş Yap</a>
+  <a style="  float: right;" href="kayit_ol.php">Kaydol</a>
   <a href="takim.html">Takımımız</a>
+
+
 </ul>
 </div>
 
 <div class="#main" id="Anasayfa">
 
-    <div class="slider">
-        <div class="slide_viewer">
-          <div class="slide_group">
-            <div>
-                <img src="resimler\img2.jpg" alt="">
-            </div>
-            <div >
-                <img src="resimler\img1" alt="">
-            </div>
-            <div >
-                <img src="resimler\siyah.jpg" alt="">
-            </div>
-            <div class="slide">
-            </div>
-          </div>
-        </div>
-      </div><!-- End // .slider -->
-      
-      <!-- <div class="slide_buttons">
-      </div>
-      
-      <div class="directional_nav">
-        <div class="previous_btn" title="Previous">
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="65px" height="65px" viewBox="-11 -11.5 65 66">
-            <g>
-              <g>
-                <path fill="#474544" d="M-10.5,22.118C-10.5,4.132,4.133-10.5,22.118-10.5S54.736,4.132,54.736,22.118
-                  c0,17.985-14.633,32.618-32.618,32.618S-10.5,40.103-10.5,22.118z M-8.288,22.118c0,16.766,13.639,30.406,30.406,30.406 c16.765,0,30.405-13.641,30.405-30.406c0-16.766-13.641-30.406-30.405-30.406C5.35-8.288-8.288,5.352-8.288,22.118z"/>
-                <path fill="#474544" d="M25.43,33.243L14.628,22.429c-0.433-0.432-0.433-1.132,0-1.564L25.43,10.051c0.432-0.432,1.132-0.432,1.563,0	c0.431,0.431,0.431,1.132,0,1.564L16.972,21.647l10.021,10.035c0.432,0.433,0.432,1.134,0,1.564	c-0.215,0.218-0.498,0.323-0.78,0.323C25.929,33.569,25.646,33.464,25.43,33.243z"/>
-              </g>
-            </g>
-          </svg>
-        </div>
-        <div class="next_btn" title="Next">
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="65px" height="65px" viewBox="-11 -11.5 65 66">
-            <g>
-              <g>
-                <path fill="#474544" d="M22.118,54.736C4.132,54.736-10.5,40.103-10.5,22.118C-10.5,4.132,4.132-10.5,22.118-10.5	c17.985,0,32.618,14.632,32.618,32.618C54.736,40.103,40.103,54.736,22.118,54.736z M22.118-8.288	c-16.765,0-30.406,13.64-30.406,30.406c0,16.766,13.641,30.406,30.406,30.406c16.768,0,30.406-13.641,30.406-30.406 C52.524,5.352,38.885-8.288,22.118-8.288z"/>
-                <path fill="#474544" d="M18.022,33.569c 0.282,0-0.566-0.105-0.781-0.323c-0.432-0.431-0.432-1.132,0-1.564l10.022-10.035 			L17.241,11.615c 0.431-0.432-0.431-1.133,0-1.564c0.432-0.432,1.132-0.432,1.564,0l10.803,10.814c0.433,0.432,0.433,1.132,0,1.564 L18.805,33.243C18.59,33.464,18.306,33.569,18.022,33.569z"/>
-              </g>
-            </g>
-          </svg>
-        </div>
-      </div>End // .directional_nav -->
+
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script>
-    $('.slider').each(function() {
-  var $this = $(this);
-  var $group = $this.find('.slide_group');
-  var $slides = $this.find('.slide');
-  var bulletArray = [];
-  var currentIndex = 0;
-  var timeout;
-  
-  function move(newIndex) {
-    var animateLeft, slideLeft;
-    
-    advance();
-    
-    if ($group.is(':animated') || currentIndex === newIndex) {
-      return;
-    }
-    
-    bulletArray[currentIndex].removeClass('active');
-    bulletArray[newIndex].addClass('active');
-    
-    if (newIndex > currentIndex) {
-      slideLeft = '100%';
-      animateLeft = '-100%';
-    } else {
-      slideLeft = '-100%';
-      animateLeft = '100%';
-    }
-    
-    $slides.eq(newIndex).css({
-      display: 'block',
-      left: slideLeft
-    });
-    $group.animate({
-      left: animateLeft
-    }, function() {
-      $slides.eq(currentIndex).css({
-        display: 'none'
-      });
-      $slides.eq(newIndex).css({
-        left: 0
-      });
-      $group.css({
-        left: 0
-      });
-      currentIndex = newIndex;
-    });
-  }
-  
-  function advance() {
-    clearTimeout(timeout);
-    timeout = setTimeout(function() {
-      if (currentIndex < ($slides.length - 1)) {
-        move(currentIndex + 1);
-      } else {
-        move(0);
-      }
-    }, 4000);
-  }
-  
-  $('.next_btn').on('click', function() {
-    if (currentIndex < ($slides.length - 1)) {
-      move(currentIndex + 1);
-    } else {
-      move(0);
-    }
-  });
-  
-  $('.previous_btn').on('click', function() {
-    if (currentIndex !== 0) {
-      move(currentIndex - 1);
-    } else {
-      move(3);
-    }
-  });
-  
-  $.each($slides, function(index) {
-    var $button = $('<a class="slide_btn">&bull;</a>');
-    
-    if (index === currentIndex) {
-      $button.addClass('active');
-    }
-    $button.on('click', function() {
-      move(index);
-    }).appendTo('.slide_buttons');
-    bulletArray.push($button);
-  });
-  
-  advance();
-});
-</script>
+
+
+  <div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <img src="resimler/etkinlik.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="resimler/buogrenciprojeleri.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="resimler/yokanadoluprojesi.jpg" style="width:100%">
+  </div>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
 <div class="#main" id="Duyuru">
+
+<button class="accordion">09/06/2021 Yapay Zeka, Robotik ve Veri Bilimi - Global AI Hub Semineri</button>
+<div class="panel">
+  <p> Global AI Hub tarafından Yapay Zeka, Robotik ve Veri Bilimi alanlarında 9 Haziran Çarşamba günü seminer verilecektir. Tüm öğrencilerimizin katılmaları faydalarına olacaktır. </p>
+</div>
+
+<button class="accordion">08/06/2021 Bilgisayar Mühendisliği Bölümü 2020-2021 Bahar Dönemi Ders Değerlendirme Anketleri</button>
+<div class="panel">
+  <p>1.Sınıf Dersleri:</p>
+  <p>BSM102 Bilgisayar Mühendisliğine Giriş dersi ders değerlendirme anketi için <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=jAmDW8eKRU-XzHZReFSlBR5uEw0md4pKi0vuEveLm6JURTlGWlo4MTNKOVVIUE5QRTVYUk1UNTZSMS4u">tıklayınız.</a></p>
+  <p>BSM104 Algoritmalar ve Programlama II dersi ders anketi değenlendirme için <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=jAmDW8eKRU-XzHZReFSlBR5uEw0md4pKi0vuEveLm6JURVFOV05RVERENUc3MkdMSk1XUVE3OU0yMS4u">tıklayınız.</a></p>
+  <p>BSM106 İş Sağlığı ve Güvenliği II dersi ders değerlendirme anketi için <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=jAmDW8eKRU-XzHZReFSlBR5uEw0md4pKi0vuEveLm6JUNjFXTzVVR0dLVU0xRFNZSE1GUVdEMEhTVS4u">tıklayınız.</a></p>
+  <p>MAT102 Matematik II dersi ders değerlendirme anketi için <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=jAmDW8eKRU-XzHZReFSlBR5uEw0md4pKi0vuEveLm6JUNVo1Wkw0WTNJMVZWRUFLWE9CQk5DQVBTNS4u">tıklayınız.</a></p>
+</div>
+
+<button class="accordion">07/06/2021 Teknik Seçmeli Ders Anketi ( Tüm Öğrenciler İçin - Önemli )</button>
+<div class="panel">
+  <p>Tüm Öğrencilerimizin Dikkatine!</p>
+  <p>Kaliteli eğitim-öğretimin yanında öğrenci ile dialog kurmayı ilke edinen Bilgisayar ve Elektrik-Elektronik Mühendisliği Bölümleri,Teknik Seçmeli Ders Havuzunu genişletmek amacıyla</p>
+  <p>işbirliği yapmış olup bu kapsamda görüş ve önerilerinize değer vermektedir. Aşağıda bağlantı adresi paylaşılan anketin tüm öğrencilerimiz tarafından doldurulması önem arz etmektedir.</p>
+  <p>Anketi yanıtlayarak Bölümlerimizdeki eğitim süreçlerine destek olduğunuz için şimdiden teşekkür ederiz.</p>
+  <p>Anket Bağlantısı: <a href="https://forms.office.com/r/ZesFwwLTqf">https://forms.office.com/r/ZesFwwLTqf</a></p>
+  <p>Not: Son erişim tarihi 13 Haziran 2021 Saat 23:45'dir.</p>
+</div>
+
+
+<!-- slide show script  -->
+  <script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+  </script>
+
+
+<!-- duyuru script  -->
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
+
+<?php
+require('footer.PHP');
+?>
 </body>
 </html>
