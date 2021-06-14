@@ -8,7 +8,7 @@
 	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
 <link rel="stylesheet" href="CssFile/style.css">
-<link rel="stylesheet" href="socialpage2.css">
+<link rel="stylesheet" href="CssFile/socialpage2.css">
 <link rel="stylesheet" href="CssFile/social_page.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" rel="stylesheet">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>

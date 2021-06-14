@@ -22,6 +22,7 @@ header("Location:giris.php");
   <a style="  float: right;" href="cikis.php">Çıkış Yap</a>
  <a href="depoekle.php">Depo</a>
   <a href="takim.html">Takımımız</a>
+  <a class="active" href="uye_listesi.php">Üye Listesi</a>
 </ul>
 </div>
 <div class="container">

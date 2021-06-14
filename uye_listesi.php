@@ -23,6 +23,7 @@ header("Location:giris.php");
  <a href="depoekle.php">Depo</a>
   <a href="takim.html">Takımımız</a>
   <a class="active" href="uye_listesi.php">Üye Listesi</a>
+  <a  href="social_media_page.php">Meydan</a>
 </ul>
 </div>
 <div class="form-control>
