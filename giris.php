@@ -19,13 +19,13 @@ if ($_SESSION["login"]) {
 <body>
 <div class="topnav">
 <ul>
-<a  href="index.php">Anasayfa</a>
-  <a href="index.php">Duyurular</a>
-  <a href="İletisim.php">İletişim</a>
-  <a style="  float: right;" href="giris.php">Giriş Yap</a>
-  <a style="  float: right;" href="kayit_ol.php">Kaydol</a>
-  <a style="  float: right;" href="admin.php">Admin</a>
-  <a href="takim.html">Takımımız</a>
+<a class=active  href="index.php">Anasayfa</a>
+  <a class=active href="index.php">Duyurular</a>
+  <a class=active href="İletisim.php">İletişim</a>
+  <a class=active style="  float: right;" href="giris.php">Giriş Yap</a>
+  <a class=active style="  float: right;" href="kayit_ol.php">Kaydol</a>
+  <a class=active style="  float: right;" href="admin.php">Admin</a>
+  <a class=active href="takim.html">Takımımız</a>
 </ul>
 </div>
 <div class="container">
