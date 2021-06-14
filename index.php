@@ -33,15 +33,15 @@
   <div class="slideshow-container">
 
   <div class="mySlides fade">
-    <img src="resimler/etkinlik.png" style="width:100%">
+    <img src="resimler/photo.jpg" style="width:100%">
   </div>
 
   <div class="mySlides fade">
-    <img src="resimler/buogrenciprojeleri.jpg" style="width:100%">
+    <img src="resimler/photo1.jpg" style="width:100%">
   </div>
 
   <div class="mySlides fade">
-    <img src="resimler/yokanadoluprojesi.jpg" style="width:100%">
+    <img src="resimler/photo2.jpg" style="width:100%">
   </div>
 
   </div>
@@ -55,28 +55,24 @@
 
 <div class="#main" id="Duyuru">
 
-<button class="accordion">09/06/2021 Yapay Zeka, Robotik ve Veri Bilimi - Global AI Hub Semineri</button>
+<button class="accordion">BÖLÜMÜMÜZ ÖĞRENCİLERİNDEN UYGULAMALI SİBER GÜVENLİĞE GİRİŞ EĞİTİMİ</button>
 <div class="panel">
-  <p> Global AI Hub tarafından Yapay Zeka, Robotik ve Veri Bilimi alanlarında 9 Haziran Çarşamba günü seminer verilecektir. Tüm öğrencilerimizin katılmaları faydalarına olacaktır. </p>
+  <p> Bartın Üniversitesi Yazılım ve İnovasyon Kulübü 17.04.2021 tarihinde Uygulamalı Siber Güvenliğe Giriş eğitimi gerçekleştirdi.</p>
+  <p> BUYİNOVA Youtube kanalından canlı olarak yayınlanan eğitimde Linux işletim sistemi, dağıtımları, temel dosya işlemleri, Linux'un farkları ve avantajları ile Linux'da kullanılan komutlar üzerinde duruldu. </p>
+  <p> Etkinliğin sonunda soru/cevap oturumu yapıldı. Eğitimi Siber Güvenlik alanında çalışmalar yapan ve kulübümüzün yönetim kurulunda yer alan üç arkadaşımız verdi.</p>
+
+
 </div>
 
-<button class="accordion">08/06/2021 Bilgisayar Mühendisliği Bölümü 2020-2021 Bahar Dönemi Ders Değerlendirme Anketleri</button>
+<button class="accordion">Siber Kulüpler Birliği Destekli Proje Gruplarında Bulunmak İster Misiniz?</button>
 <div class="panel">
-  <p>1.Sınıf Dersleri:</p>
-  <p>BSM102 Bilgisayar Mühendisliğine Giriş dersi ders değerlendirme anketi için <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=jAmDW8eKRU-XzHZReFSlBR5uEw0md4pKi0vuEveLm6JURTlGWlo4MTNKOVVIUE5QRTVYUk1UNTZSMS4u">tıklayınız.</a></p>
-  <p>BSM104 Algoritmalar ve Programlama II dersi ders anketi değenlendirme için <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=jAmDW8eKRU-XzHZReFSlBR5uEw0md4pKi0vuEveLm6JURVFOV05RVERENUc3MkdMSk1XUVE3OU0yMS4u">tıklayınız.</a></p>
-  <p>BSM106 İş Sağlığı ve Güvenliği II dersi ders değerlendirme anketi için <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=jAmDW8eKRU-XzHZReFSlBR5uEw0md4pKi0vuEveLm6JUNjFXTzVVR0dLVU0xRFNZSE1GUVdEMEhTVS4u">tıklayınız.</a></p>
-  <p>MAT102 Matematik II dersi ders değerlendirme anketi için <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=jAmDW8eKRU-XzHZReFSlBR5uEw0md4pKi0vuEveLm6JUNVo1Wkw0WTNJMVZWRUFLWE9CQk5DQVBTNS4u">tıklayınız.</a></p>
+  <p>Bartın Üniversitesi Yazılım ve İnovasyon Kulübü(BUYİNOVA) bünyesinde Siber Kulüpler Birliği ile beraber yürütülen Siber Güvenlik Alanındaki Ar&Ge Projelerinde yer almak istiyorsanız formu doldurmanız gerekmektedir.</p>
+  <p>Form <a href="https://forms.gle/saWNriPW8o6n6mcr6">linki</a></p>
 </div>
 
-<button class="accordion">07/06/2021 Teknik Seçmeli Ders Anketi ( Tüm Öğrenciler İçin - Önemli )</button>
+<button class="accordion">Üniversite Öğrencilerine Yönelik Proje Yarışmaları</button>
 <div class="panel">
-  <p>Tüm Öğrencilerimizin Dikkatine!</p>
-  <p>Kaliteli eğitim-öğretimin yanında öğrenci ile dialog kurmayı ilke edinen Bilgisayar ve Elektrik-Elektronik Mühendisliği Bölümleri,Teknik Seçmeli Ders Havuzunu genişletmek amacıyla</p>
-  <p>işbirliği yapmış olup bu kapsamda görüş ve önerilerinize değer vermektedir. Aşağıda bağlantı adresi paylaşılan anketin tüm öğrencilerimiz tarafından doldurulması önem arz etmektedir.</p>
-  <p>Anketi yanıtlayarak Bölümlerimizdeki eğitim süreçlerine destek olduğunuz için şimdiden teşekkür ederiz.</p>
-  <p>Anket Bağlantısı: <a href="https://forms.office.com/r/ZesFwwLTqf">https://forms.office.com/r/ZesFwwLTqf</a></p>
-  <p>Not: Son erişim tarihi 13 Haziran 2021 Saat 23:45'dir.</p>
+  <p>Bilim İnsanı Destek Programları Başkanlığınca üniversite öğrencilerini ülkemizin ihtiyaç duyduğu öncelikli alanlarda çalışmalar yapmaya yönlendirmek amacıyla 2238 Girişimcilik ve Yenilikçilik Yarışması, 2241 Özel Sektöre Yönelik Lisans Bitirme Tezleri Yarışması ve 2242 Öncelikli Alanlarda Üniversite Öğrencileri Proje Yarışması her yıl eş zamanlı olarak düzenlenmektedir.</p>
 </div>
 
 
