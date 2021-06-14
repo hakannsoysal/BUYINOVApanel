@@ -7,6 +7,7 @@
   <a style="  float: right;" href="cikis.php">Çıkış</a>
   <a href="social_media_page.php">Meydan</a>
  <a class="active" href="depoekle.php">Depo</a>
+ <a href="uye_listesi.php">Üye Listesi</a>
 </ul>
 </div>
 <?php
@@ -75,7 +76,7 @@ include("baglanti.php");
 		<?php
 
 
-		    $resim = $db->prepare("select * from depo");
+		  $resim = $db->prepare("select * from depo");
 			$resim->execute(array());
 			$d = $resim->fetchAll(PDO::FETCH_ASSOC);
 

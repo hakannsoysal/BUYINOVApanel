@@ -17,8 +17,7 @@
     <div class="topnav">
     <ul>
     <a  href="index.php">Anasayfa</a>
-      <a href="index.php">Duyurular</a>
-      <a href="İletisim.php">İletişim</a>
+      <a class="active" href="İletisim.php">İletişim</a>
       <a style="  float: right;" href="giris.php">Giriş Yap</a>
       <a style="  float: right;" href="kayit_ol.php">Kaydol</a>
       <a style="  float: right;" href="admin.php">Admin</a>

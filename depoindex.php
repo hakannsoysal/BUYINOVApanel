@@ -11,7 +11,6 @@
 <div class="topnav">
 <ul>
 <a  href="index.php">Anasayfa</a>
-  <a href="index.php">Duyurular</a>
   <a href="İletisim.php">İletişim</a>
   <a href="giris.php">Giriş Yap</a>
   <a href="kayit_ol.php">Kaydol</a>

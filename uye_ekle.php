@@ -18,7 +18,6 @@ header("Location:giris.php");
 <body>
 <div class="topnav">
 <ul>
-  <a href="duyuru.html">Duyurular</a>
   <a href="İletisim.php">İletişim</a>
   <a style="  float: right;" href="cikis.php">Çıkış Yap</a>
  <a href="depoekle.php">Depo</a>
