@@ -11,7 +11,7 @@ header("Location:giris.php");
 <head>
     <meta charset="UTF-8">
     <title>Üye Listesi</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="CssFile/style.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 </head>
@@ -31,7 +31,7 @@ header("Location:giris.php");
             <h3 class="mt-5"><b>Üye Listesi</b></h3>
             <table class="table">
                 <thead class="thead-light">
-              
+
                 <tr >
                     <th scope="col">ID</th>
                     <th scope="col"> Kullanıcı Adı</th>
@@ -61,7 +61,7 @@ header("Location:giris.php");
             </table>
             <a href="uye_ekle.php" class="btn btn-primary">Yeni Üye Ekle</a>
             <a  class="btn btn-danger" href="index.php?sayfa=cikis-yap"><b>ÇIKIŞ YAP</b></a>
-           
+
         </div>
     </div>
 </div>

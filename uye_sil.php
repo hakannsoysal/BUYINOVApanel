@@ -11,12 +11,12 @@ header("Location:giris.php");
 <head>
     <meta charset="UTF-8">
     <title>Üye Sil</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="CssFile/style.css" />
 
 </head>
 
 <body>
-    
+
 <div class="container" id=uye_sil>
     <div class="row">
         <div class="col">

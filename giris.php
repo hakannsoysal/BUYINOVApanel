@@ -14,7 +14,7 @@ if ($_SESSION["login"]) {
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Üye Girişi</title>
     <link rel="stylesheet" href="bootstrap.min.css"/>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CssFile/style.css">
 </head>
 <body>
 <div class="topnav">

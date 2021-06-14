@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title></title>
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="depo.css">
+	<link rel="stylesheet" href="CssFile/style.css">
+	<link rel="stylesheet" href="CssFile/depo.css">
 </head>
 <body>
 
@@ -21,24 +21,23 @@
 </div>
 </body>
 </html>
-	<?php  
-	
+	<?php
+
 	include("baglanti.php");
-	
+
 	 $do = @$_GET["do"];
-	
+
 	    switch ($do) {
-			
+
 			case "sil":
 			include("deposil.php");
 			break;
-		
+
 			default:
 			include("depoekle.php");
 			break;
-			
-			
-		}
-	
-	?>
 
+
+		}
+
+	?>

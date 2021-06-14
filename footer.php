@@ -2,8 +2,8 @@
 <head>
 <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="CssFile/style.css">
+  <link rel="stylesheet" href="CssFile/styles.css">
   <script src="script.js"></script>
 
 
@@ -38,14 +38,14 @@ footer p { font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:8px;}
 <footer class="footer">
 
 
-<!--foote_bottom_ul_amrc ends here-->
+
 <p class="text-center">Copyright @2021 | Designed With by <a href="#">BUYINOVA</a></p>
 
 <ul class="social_footer_ul">
 <li><a href="https://twitter.com/bartinceng"><i class="fab fa-twitter"></i></a></li>
 <li><a href="https://www.instagram.com/bartinceng/"><i class="fab fa-instagram"></i></a></li>
 </ul>
-<!--social_footer_ul ends here-->
+
 
 </footer>
 

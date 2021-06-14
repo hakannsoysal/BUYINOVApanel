@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="social.css">
+    <link rel="stylesheet" href="CssFile/style.css">
+    <link rel="stylesheet" href="CssFile/social.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
      <title>Hesap Ayarları</title>
 </head>
 <body>
 <div class="topnav">
 <ul>
-<a class="active" href="#Anasayfa">Anasayfa</a>
-  <a href="#Duyuru">Duyurular</a>
+<a  href="index.php">Anasayfa</a>
+<a class="active" href="social_media_page.php">Meydan</a>
   <a href="İletisim.php">İletişim</a>
-  <a href="cikis.php" style="float: right;">Çıkış Yap</a>
+  <a style="  float: right;" href="cikis.php">Çıkış Yap</a>
   <a href="takim.html">Takımımız</a>
+  <a style="  float: right;" href="account_settings.php">Hesap Ayarları</a>
+
 </ul>
 </div>
 <div class="container light-style flex-grow-1 container-p-y">
@@ -62,11 +64,11 @@
                 </div>
                 <div class="form-group">
                   <label class="form-label">İsim</label>
-                  <input type="text" class="form-control" value="Nelle Maxwell">
+                  <input type="text" class="form-control" value="Hakan Soysal">
                 </div>
                 <div class="form-group">
                   <label class="form-label">E-mail</label>
-                  <input type="text" class="form-control mb-1" value="nmaxwell@mail.com">
+                  <input type="text" class="form-control mb-1" value="hakan@mail.com">
                   <div class="alert alert-warning mt-3">
                     E-postanız onaylanmadı. Lütfen gelen kutunuzu kontrol edin.<br>
                     <a href="javascript:void(0)">Doğrulamayı tekrar gönder</a>
@@ -100,7 +102,7 @@
 
                 <div class="form-group">
                   <label class="form-label">Biografi</label>
-                  <textarea class="form-control" rows="5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nunc arcu, dignissim sit amet sollicitudin iaculis, vehicula id urna. Sed luctus urna nunc. Donec fermentum, magna sit amet rutrum pretium, turpis dolor molestie diam, ut lacinia diam risus eleifend sapien. Curabitur ac nibh nulla. Maecenas nec augue placerat, viverra tellus non, pulvinar risus.</textarea>
+                  <textarea class="form-control" rows="5">Selam ben Hakan.</textarea>
                 </div>
                 <div class="form-group">
                   <label class="form-label">Doğum günü</label>

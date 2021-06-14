@@ -7,33 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="CssFile/style.css">
 <link rel="stylesheet" href="socialpage2.css">
-<link rel="stylesheet" href="social_page.css">
+<link rel="stylesheet" href="CssFile/social_page.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" rel="stylesheet">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
   <div class="topnav">
 <ul>
-<a class="active" href="index.php">Anasayfa</a>
+<a  href="index.php">Anasayfa</a>
+<a class="active" href="social_media_page.php">Meydan</a>
   <a href="İletisim.php">İletişim</a>
   <a style="  float: right;" href="cikis.php">Çıkış Yap</a>
   <a href="takim.html">Takımımız</a>
   <a style="  float: right;" href="account_settings.php">Hesap Ayarları</a>
-  
+
 </ul>
 </div>
 
 
 
-<!-- social media -->
+<!-- socialmedia -->
 <div class="container">
 <div class="main-body p-0">
     <div class="inner-wrapper">
-        <!-- Inner sidebar -->
+        <!-- Sidebar Baslangici -->
         <div class="inner-sidebar">
-            <!-- Inner sidebar header -->
+            <!-- Sidebar Header Baslangici -->
             <div class="inner-sidebar-header justify-content-center">
                 <button class="btn btn-primary has-icon btn-block" type="button" data-toggle="modal" data-target="#threadModal">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus mr-2">
@@ -43,9 +44,9 @@
                     YENİ TARTIŞMA
                 </button>
             </div>
-            <!-- /Inner sidebar header -->
+            <!--  Sidebar Header Bitti -->
 
-            <!-- Inner sidebar body -->
+            <!-- Sidebar Body Baslangici -->
             <div class="inner-sidebar-body p-0">
                 <div class="p-3 h-100" data-simplebar="init">
                     <div class="simplebar-wrapper" style="margin: -16px;">
@@ -72,13 +73,13 @@
                     <div class="simplebar-track simplebar-vertical" style="visibility: visible;"><div class="simplebar-scrollbar" style="height: 151px; display: block; transform: translate3d(0px, 0px, 0px);"></div></div>
                 </div>
             </div>
-            <!-- /Inner sidebar body -->
+            <!-- Sidebar Body Bitti -->
         </div>
-        <!-- /Inner sidebar -->
+        <!-- Sidebar Bitti -->
 
-        <!-- Inner main -->
+        <!-- Main Baslangici -->
         <div class="inner-main">
-            <!-- Inner main header -->
+            <!-- Main Header Baslangici -->
             <div class="inner-main-header">
                 <a class="nav-link nav-icon rounded-circle nav-link-faded mr-3 d-md-none" href="#" data-toggle="inner-sidebar"><i class="material-icons">arrow_forward_ios</i></a>
                 <select class="custom-select custom-select-sm w-auto mr-1">
@@ -92,22 +93,22 @@
                     <input type="text" class="form-control form-control-sm bg-gray-200 border-gray-200 shadow-none mb-4 mt-4" placeholder="Ara" />
                 </span>
             </div>
-            <!-- /Inner main header -->
+            <!-- Main Header Bitti -->
 
-            <!-- Inner main body -->
+            <!-- Main Body Baslangici -->
 
-            <!-- Forum List -->
+            <!-- Socialmedia Listesi Baslangici -->
             <div class="inner-main-body p-2 p-sm-3 collapse forum-content show">
                 <div class="card mb-2">
                     <div class="card-body p-2 p-sm-3">
                         <div class="media forum-item">
                             <a href="#" data-toggle="collapse" data-target=".forum-content"><img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="mr-3 rounded-circle" width="50" alt="User" /></a>
                             <div class="media-body">
-                                <h6><a href="#" data-toggle="collapse" data-target=".forum-content" class="text-body">Realtime fetching data</a></h6>
+                                <h6><a href="#" data-toggle="collapse" data-target=".forum-content" class="text-body">Gerçek zamanlı veri</a></h6>
                                 <p class="text-secondary">
-                                    lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+                                Ben laravel'de acemiyim ve gösterge paneli analizlerim için veri tabanından gerçek zamanlı olarak veri almak istiyorum ve ajax ile bir çözüm buldum ama herhangi birinin basit bir çözümü varsa işe yaramazsa yardımcı olacaktır.
                                 </p>
-                                <p class="text-muted"><a href="javascript:void(0)">drewdan</a> replied <span class="text-secondary font-weight-bold">13 minutes ago</span></p>
+                                <p class="text-muted"><a href="javascript:void(0)">Mehmet</a> cevaplandı <span class="text-secondary font-weight-bold">13 dakika önce</span></p>
                             </div>
                             <div class="text-muted small text-center align-self-center">
                                 <span class="d-none d-sm-inline-block"><i class="far fa-eye"></i> 19</span>
@@ -122,11 +123,11 @@
                         <div class="media forum-item">
                             <a href="#" data-toggle="collapse" data-target=".forum-content"><img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="mr-3 rounded-circle" width="50" alt="User" /></a>
                             <div class="media-body">
-                                <h6><a href="#" data-toggle="collapse" data-target=".forum-content" class="text-body">One model 4 tables</a></h6>
+                                <h6><a href="#" data-toggle="collapse" data-target=".forum-content" class="text-body">Bir model 4 masa</a></h6>
                                 <p class="text-secondary">
-                                    lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+                                Ben laravel'de acemiyim ve gösterge paneli analizlerim için veri tabanından gerçek zamanlı olarak veri almak istiyorum ve ajax ile bir çözüm buldum ama herhangi birinin basit bir çözümü varsa işe yaramazsa yardımcı olacaktır.
                                 </p>
-                                <p class="text-muted"><a href="javascript:void(0)">bugsysha</a> replied <span class="text-secondary font-weight-bold">14 hours ago</span></p>
+                                <p class="text-muted"><a href="javascript:void(0)">Bilal</a> cevapladı <span class="text-secondary font-weight-bold">14 saat önce</span></p>
                             </div>
                             <div class="text-muted small text-center align-self-center">
                                 <span class="d-none d-sm-inline-block"><i class="far fa-eye"></i> 45</span>
@@ -140,11 +141,11 @@
                         <div class="media forum-item">
                             <a href="#" data-toggle="collapse" data-target=".forum-content"><img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="mr-3 rounded-circle" width="50" alt="User" /></a>
                             <div class="media-body">
-                                <h6><a href="#" data-toggle="collapse" data-target=".forum-content" class="text-body">Auth attempt returns false</a></h6>
+                                <h6><a href="#" data-toggle="collapse" data-target=".forum-content" class="text-body"> Yetkilendirme girişimi false döndürür</a></h6>
                                 <p class="text-secondary">
-                                    lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+                                Ben laravel'de acemiyim ve gösterge paneli analizlerim için veri tabanından gerçek zamanlı olarak veri almak istiyorum ve ajax ile bir çözüm buldum ama herhangi birinin basit bir çözümü varsa işe yaramazsa yardımcı olacaktır.
                                 </p>
-                                <p class="text-muted"><a href="javascript:void(0)">michaeloravec</a> replied <span class="text-secondary font-weight-bold">18 hours ago</span></p>
+                                <p class="text-muted"><a href="javascript:void(0)">Mehmet</a> cevapladı <span class="text-secondary font-weight-bold">18 saat önce</span></p>
                             </div>
                             <div class="text-muted small text-center align-self-center">
                                 <span class="d-none d-sm-inline-block"><i class="far fa-eye"></i> 70</span>
@@ -155,39 +156,38 @@
                 </div>
                 <ul class="pagination pagination-sm pagination-circle justify-content-center mb-0">
                     <li class="page-item disabled">
-                        <span class="page-link has-icon"><i class="material-icons">chevron_left</i></span>
+                        <span class="page-link has-icon"><i class="material-icons">sol</i></span>
                     </li>
                     <li class="page-item"><a class="page-link" href="javascript:void(0)">1</a></li>
                     <li class="page-item active"><span class="page-link">2</span></li>
                     <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
                     <li class="page-item">
-                        <a class="page-link has-icon" href="javascript:void(0)"><i class="material-icons">chevron_right</i></a>
+                        <a class="page-link has-icon" href="javascript:void(0)"><i class="material-icons">sağ</i></a>
                     </li>
                 </ul>
             </div>
-            <!-- /Forum List -->
+            <!-- Socialmedia Listesi Bitti -->
 
-            <!-- Forum Detail -->
+            <!-- Socialmedia Detaylari Baslangici -->
             <div class="inner-main-body p-2 p-sm-3 collapse forum-content">
-                <a href="#" class="btn btn-light btn-sm mb-3 has-icon" data-toggle="collapse" data-target=".forum-content"><i class="fa fa-arrow-left mr-2"></i>Back</a>
+                <a href="#" class="btn btn-light btn-sm mb-3 has-icon" data-toggle="collapse" data-target=".forum-content"><i class="fa fa-arrow-left mr-2"></i>Geri</a>
                 <div class="card mb-2">
                     <div class="card-body">
                         <div class="media forum-item">
                             <a href="javascript:void(0)" class="card-link">
                                 <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="rounded-circle" width="50" alt="User" />
-                                <small class="d-block text-center text-muted">Newbie</small>
+                                <small class="d-block text-center text-muted">Pro</small>
                             </a>
                             <div class="media-body ml-3">
-                                <a href="javascript:void(0)" class="text-secondary">Mokrani</a>
-                                <small class="text-muted ml-2">1 hour ago</small>
-                                <h5 class="mt-1">Realtime fetching data</h5>
+                                <a href="javascript:void(0)" class="text-secondary">Ahmet</a>
+                                <small class="text-muted ml-2">1 saat önce</small>
+                                <h5 class="mt-1">Gerçek zamanlı veri alma</h5>
                                 <div class="mt-3 font-size-sm">
-                                    <p>Hellooo :)</p>
+                                    <p>Merhabaa :)</p>
                                     <p>
-                                        I'm newbie with laravel and i want to fetch data from database in realtime for my dashboard anaytics and i found a solution with ajax but it dosen't work if any one have a simple solution it will be
-                                        helpful
+                                    Ben laravel'de acemiyim ve gösterge paneli analizlerim için veri tabanından gerçek zamanlı olarak veri almak istiyorum ve ajax ile bir çözüm buldum ama herhangi birinin basit bir çözümü varsa işe yaramazsa yardımcı olacaktır.
                                     </p>
-                                    <p>Thank</p>
+                                    <p>Teşekkür</p>
                                 </div>
                             </div>
                             <div class="text-muted small text-center">
@@ -205,27 +205,27 @@
                                 <small class="d-block text-center text-muted">Pro</small>
                             </a>
                             <div class="media-body ml-3">
-                                <a href="javascript:void(0)" class="text-secondary">drewdan</a>
-                                <small class="text-muted ml-2">1 hour ago</small>
+                                <a href="javascript:void(0)" class="text-secondary">Mehmet</a>
+                                <small class="text-muted ml-2">1 saat önce</small>
                                 <div class="mt-3 font-size-sm">
-                                    <p>What exactly doesn't work with your ajax calls?</p>
-                                    <p>Also, WebSockets are a great solution for realtime data on a dashboard. Laravel offers this out of the box using broadcasting</p>
+                                    <p>Ajax çağrılarınızda tam olarak ne işe yaramaz?</p>
+                                    <p>Ayrıca WebSockets, bir panodaki gerçek zamanlı veriler için harika bir çözümdür. Laravel bunu yayın yoluyla kullanıma hazır olarak sunuyor</p>
                                 </div>
                                 <button class="btn btn-xs text-muted has-icon"><i class="fa fa-heart" aria-hidden="true"></i>1</button>
-                                <a href="javascript:void(0)" class="text-muted small">Reply</a>
+                                <a href="javascript:void(0)" class="text-muted small">Yanıtla</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- /Forum Detail -->
+            <!-- Socialmedia Detaylari Bitti -->
 
-            <!-- /Inner main body -->
+            <!-- Mmain Body Bitti -->
         </div>
-        <!-- /Inner main -->
+        <!-- Main Bitti -->
     </div>
 
-    <!-- New Thread Modal -->
+    <!-- Yeni Thread Modeli Baslangici -->
     <div class="modal fade" id="threadModal" tabindex="-1" role="dialog" aria-labelledby="threadModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
@@ -240,7 +240,7 @@
                         <div class="form-group">
                             <label for="threadTitle">Konu</label>
                             <input type="text" class="form-control" id="threadTitle" placeholder="Konu gir" autofocus="" />
-                              
+
                         </div>
                         <textarea class="form-control summernote" style="display: none;"></textarea>
 
@@ -270,12 +270,12 @@
 
 
 <script type="text/javascript">
-/* Set the width of the sidebar to 250px (show it) */
+
 function openNav() {
   document.getElementById("mySidepanel").style.width = "250px";
 }
 
-/* Set the width of the sidebar to 0 (hide it) */
+
 function closeNav() {
   document.getElementById("mySidepanel").style.width = "0";
 }
